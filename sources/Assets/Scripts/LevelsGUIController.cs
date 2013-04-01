@@ -18,6 +18,8 @@ namespace Assets.Scripts
 		private void OnLevelSelected(GameEventArgs<int> gameEventArgs)
 		{
 			Debug.Log("Level selected:" + gameEventArgs.Value);
+			GameController.SelectedLevelNumber = gameEventArgs.Value;
+			Application.LoadLevel(SceneNames.Game);
 		}
 
 		void OnMenuButtonClick(object sender, EventArgs e)

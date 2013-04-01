@@ -5,5 +5,6 @@ namespace Assets.Scripts
 	{
 		public const string Menu = "menu";
 		public const string Levels = "levels";
+		public const string Game = "game";
 	}
 }
